@@ -37,14 +37,26 @@ public class Oblig1 {
 
 
 
-
-
-
-
     ///// Oppgave 2 //////////////////////////////////////
     public static int antallUlikeSortert(int[] a) {
-        throw new UnsupportedOperationException();
+        //throw new UnsupportedOperationException();
+
+        int ulike = 1;
+
+        for (int i = 1; i < a.length; i++) {
+
+
+                if (a[i] != a[i-1]) {
+                    ulike = ulike + 1;
+
+
+            }
+        }
+        return ulike;
     }
+
+
+
 
     ///// Oppgave 3 //////////////////////////////////////
     public static int antallUlikeUsortert(int[] a) {
@@ -97,25 +109,16 @@ public class Oblig1 {
     }
 
 
-
-
-
     public static void main(String[] args) {
-        int[] a ={2,7,8,0,5,3,6,1};
+        int[]a= {1,2,2,2,3,4,4,5,6,6,7,8,9,9};
 
-        for (int i =0; i<a.length; i++){
-            System.out.print(a[i] + " ");
-        }
+        System.out.println(antallUlikeSortert(a));
 
-        System.out.println();
 
-        maks(a);
-        for (int i =0; i<a.length; i++){
-            System.out.print(a[i] + " ");
-        }
-
-        System.out.println();
-        System.out.println(maks(a));
     }
+
+
+
+
 }
 
