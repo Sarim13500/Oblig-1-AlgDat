@@ -39,6 +39,7 @@ public class Oblig1 {
 
 
 
+
     ///// Oppgave 2 //////////////////////////////////////
     public static int antallUlikeSortert(int[] a) {
         //throw new UnsupportedOperationException();
